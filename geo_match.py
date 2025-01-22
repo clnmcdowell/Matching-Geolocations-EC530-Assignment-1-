@@ -9,7 +9,7 @@ def geo_match(array1, array2):
 
         for location2 in array2: # Loop through array2
             # Find distance between locations using Haversine formula
-            dist = haversine(point1, point2, unit=Unit.MILES)
+            dist = haversine(location1, location2, unit=Unit.MILES)
 
             # Check for new minimum distance
             if dist < min_dist:
